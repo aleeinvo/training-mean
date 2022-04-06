@@ -1,2 +1,4 @@
 Doing most of my basic stuff from here.
 https://javascript.info
+
+https://www.enable-javascript.com/
