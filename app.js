@@ -1,6 +1,13 @@
-console.log('Hi');
+let name = 'Alee';
 
+let Name = 'Alee Dhillon';
 
-console.log('this will work fine, witespaces and tabs don\'t effect code exxecution.')
+let naMe = 'Something else';
 
-// It works with or without semicolons just fine
+console.log(name);
+
+console.log(Name);
+
+console.log(naMe);
+
+// All of the above veriables are different as js is case sensitive
