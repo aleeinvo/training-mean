@@ -9,3 +9,6 @@ Script Async and defer
 https://javascript.info/script-async-defer
 
 https://javascript.info/data-types
+
+BitWise Operators
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Bitwise

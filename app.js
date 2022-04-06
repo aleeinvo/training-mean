@@ -1,5 +1,4 @@
-let x, y;
+let x = 5;
+let y = 3;
 
-x = y = 2 + 2;
-
-console.log(x, y);
+console.log(x & y);
