@@ -2,3 +2,8 @@ Doing most of my basic stuff from here.
 https://javascript.info
 
 https://www.enable-javascript.com/
+
+https://www.digitalocean.com/community/tutorials/how-to-add-javascript-to-html
+
+Script Async and defer
+https://javascript.info/script-async-defer
