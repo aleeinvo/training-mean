@@ -1,18 +1,5 @@
-let n1 = 5;
-let n2 = 4;
+let data = '500';
 
-/**
- * Addition +,
- *Subtraction -,
- *Multiplication *,
- *Division /,
- *Remainder %,
- *Exponentiation **.
- */
+console.log(+data);
 
-console.log(n1 + n2);
-console.log(n1 - n2);
-console.log(n1 * n2);
-console.log(n1 / n2);
-console.log(n1 % n2);
-console.log(n1 ** n2);
+// use single + sign to convert to the string to the number
