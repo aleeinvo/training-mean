@@ -1,5 +1,5 @@
-let data = '500';
+let x, y;
 
-console.log(+data);
+x = y = 2 + 2;
 
-// use single + sign to convert to the string to the number
+console.log(x, y);
