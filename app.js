@@ -1,5 +1,8 @@
-let todayEl = document.getElementById('today');
+let dev = {
+    name: 'Alee',
+    intro: function() {
+        console.log('my name is ' + this.name);
+    }
+}
 
-setInterval(() => {
-    todayEl.innerHTML = (new Date).toLocaleTimeString();
-}, 1000);
+dev.intro();

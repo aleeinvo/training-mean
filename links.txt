@@ -7,3 +7,5 @@ https://www.digitalocean.com/community/tutorials/how-to-add-javascript-to-html
 
 Script Async and defer
 https://javascript.info/script-async-defer
+
+https://javascript.info/data-types
