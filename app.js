@@ -1,13 +1,5 @@
-let name = 'Alee';
-
-let Name = 'Alee Dhillon';
-
-let naMe = 'Something else';
-
-console.log(name);
-
-console.log(Name);
-
-console.log(naMe);
-
-// All of the above veriables are different as js is case sensitive
+// You can write single line comment like this in js
+console.log('Here comes nothing');
+/**
+ * That how we write multiline comments in js and many other c based languages
+ */
