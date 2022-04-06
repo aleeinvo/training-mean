@@ -1,11 +1,18 @@
-let devName = "Alee";
-let isUp = false;
-let age = 28;
-let next = undefined;
-let prev = null;
+let n1 = 5;
+let n2 = 4;
 
-console.log(typeof(devName));
-console.log(typeof(isUp));
-console.log(typeof(age));
-console.log(typeof(next));
-console.log(typeof(prev));
+/**
+ * Addition +,
+ *Subtraction -,
+ *Multiplication *,
+ *Division /,
+ *Remainder %,
+ *Exponentiation **.
+ */
+
+console.log(n1 + n2);
+console.log(n1 - n2);
+console.log(n1 * n2);
+console.log(n1 / n2);
+console.log(n1 % n2);
+console.log(n1 ** n2);
