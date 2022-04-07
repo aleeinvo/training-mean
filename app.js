@@ -1,9 +1,6 @@
-// Read all the comments from page
+let x = 1;
 
-const comments = document.createNodeIterator(document, NodeFilter.SHOW_COMMENT);
-
-let currentNode = null;
-
-while(currentNode = comments.nextNode()) {
-    console.log(currentNode.textContent);
-}
+do {
+    console.log(x);
+    x++;
+} while(x <= 10)
