@@ -1,12 +1,16 @@
-let person = {
-    fName: 'Alee',
-    age: 16
-}
+let lang = 'pashto';
 
-if(person.age >= 18) {
-    console.log('Adult');
-} else if(person.age >= 13) {
-    console.log('Teen');
-} else {
-    console.log('Minor');
+switch(lang) {
+    case 'english':
+        console.log('Spoken Wordwide');
+        break;
+    case 'urdu':
+    case 'pashto':
+        console.log('Spoken mostly in Pakistan');
+        break;
+    case 'punjabi':
+        console.log('Spoken in Punjab');
+        break;
+    default:
+        console.log(`We don't know about ${lang}`)
 }
