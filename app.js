@@ -1,25 +1,7 @@
-const people = [
-    {
-        name: 'Mike Smith',
-        family: {
-            mother: 'Jane Smith',
-            father: 'Harry Smith',
-            sister: 'Samantha Smith'
-        },
-        age: 35
-    },
-    {
-        name: 'Tom Jones',
-        family: {
-            mother: 'Norah Jones',
-            father: 'Richard Jones',
-            brother: 'Howard Jones'
-        },
-        age: 25
-    }
-];
+// Math functions
 
-for(const {name: fullName, family: { sister: sisterName = null, ...restFamily}} of people) {
-    console.log(fullName, sisterName);
-    console.log(restFamily);
-}
+let result = null;
+
+result = Math.max(23, 23,2333);
+
+console.log(result);
