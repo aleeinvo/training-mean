@@ -1,9 +1,32 @@
-function getNameUpper(name) {
-    return function () {
-        return name.toUpperCase();
+var createPet = function(name) {
+    var sex;
+  
+    return {
+      setName: function(newName) {
+        name = newName;
+      },
+  
+      getName: function() {
+        return name;
+      },
+  
+      getSex: function() {
+        return sex;
+      },
+  
+      setSex: function(newSex) {
+        if(typeof newSex === 'string' && (newSex.toLowerCase() === 'male' ||
+          newSex.toLowerCase() === 'female')) {
+          sex = newSex;
+        }
+      }
     }
-}
-
-let upperFunc = getNameUpper('alee');
-
-console.log(upperFunc());
+  }
+  
+  var pet = createPet('Vivie');
+  pet.getName();                  // Vivie
+  
+  pet.setName('Oliver');
+  pet.setSex('male');
+  pet.getSex();                   // male
+  pet.getName();       
