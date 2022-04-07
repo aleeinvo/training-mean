@@ -1,8 +1,9 @@
-let dev = {
-    name: 'Alee',
-    city: 'Lahore'
-};
-
-for(let prop in dev) {
-    console.log(`${prop}: ${dev[prop]}`);
+function getNameUpper(name) {
+    return function () {
+        return name.toUpperCase();
+    }
 }
+
+let upperFunc = getNameUpper('alee');
+
+console.log(upperFunc());
