@@ -1,13 +1,37 @@
-function rand() {
-    return Math.floor(Math.random() * 256);
+let expire = (new Date(2022, 4, 26)).toUTCString();
+
+function setCookie(name, value, expiry) {
+    document.cookie = `${name}=${value}; SameSite=strict; expires=${expiry}`;
 }
 
-function randColor() {
-    return `rgb(${rand()}, ${rand()}, ${rand()})`;
+function setCookieWithMaxAge(name, value, age) {
+    document.cookie = `${name}=${value}; SameSite=strict; max-age=${age}`;
 }
 
-let container = document.getElementById('container');
+setCookie('name', 'alee', expire);
+setCookie('age', 28, expire);
+setCookie('city', 'lahore', expire);
+setCookieWithMaxAge('work', 'dev', 500);
 
-container.addEventListener('click', e => {
-    e.target.style.backgroundColor = randColor();
-});
+function getCookies() {
+    let cookies = {};
+
+    document.cookie.split(';').forEach(cookie => {
+        let [name, value] = cookie.split('=');
+
+        if(name && value) {
+            cookies[name.trim()] = value.trim();
+        }
+    });
+
+    return cookies;
+}
+
+function deleteCookie(name)
+{
+    expiry = (new Date(1970, 1, 1)).toUTCString();
+    document.cookie = `${name}=; SameSite=strict; expires=${expiry}`;
+}
+
+console.log(getCookies());
+// deleteCookie('js_session');
