@@ -1,5 +1,5 @@
-console.log(location);
+let refresh = document.getElementById('refresh');
 
-if(window.confirm('redirect to google?')) {
-    window.location.href = 'https://www.google.com.pk'
-}
+refresh.addEventListener('click', () => {
+    location.reload();
+})
