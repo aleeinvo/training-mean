@@ -1,15 +1,20 @@
-let refresh = document.getElementById('refresh');
+let value = null;
 
-refresh.addEventListener('click', () => {
-    location.reload();
-})
+value = void (4 + 5);
 
-function refreshPage() {
-    location.reload();
+console.log(value);
+
+// run this function immeditly
+void function something() {
+    console.log('something');
+}();
+
+let doSomething = document.getElementById('refresh');
+
+function doSomethingFunc() {
+    console.log('We are doing something');
+
+    return true;
 }
 
-let time = document.getElementById('time');
-
-time.innerText = (new Date).toISOString();
-
-setInterval(refreshPage, 1000);
+doSomething.onclick = () => void doSomethingFunc();
