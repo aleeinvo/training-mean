@@ -1,5 +1,5 @@
-let name = window.prompt('What is your name?');
+console.log(location);
 
-if(name) {
-    console.log(name);
+if(window.confirm('redirect to google?')) {
+    window.location.href = 'https://www.google.com.pk'
 }
