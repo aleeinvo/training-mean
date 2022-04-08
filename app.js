@@ -1,3 +1,5 @@
-let result = window.confirm('Are you sure');
+let name = window.prompt('What is your name?');
 
-console.log(result);
+if(name) {
+    console.log(name);
+}
