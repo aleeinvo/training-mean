@@ -1,17 +1,13 @@
-const btn = document.getElementById('changeBg');
-
-let count = 0;
-
-function random(number) {
-    return Math.floor(Math.random() * (number + 1));
+function rand() {
+    return Math.floor(Math.random() * 256);
 }
 
-function changeBg() {
-    const randColor = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
-
-    document.body.style.backgroundColor = randColor;
+function randColor() {
+    return `rgb(${rand()}, ${rand()}, ${rand()})`;
 }
 
-btn.addEventListener('click', changeBg, {
-    once: true
+let container = document.getElementById('container');
+
+container.addEventListener('click', e => {
+    e.target.style.backgroundColor = randColor();
 });
