@@ -1,1 +1,3 @@
-window.alert('Welcome to js training');
+let result = window.confirm('Are you sure');
+
+console.log(result);
