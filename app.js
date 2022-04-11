@@ -1,13 +1,18 @@
-// numbers
+// Booleans
 
-let age = Number(28.24);
+let initial = ' ';
 
-const biggestNum     = Number.MAX_VALUE
-const smallestNum    = Number.MIN_VALUE
-const infiniteNum    = Number.POSITIVE_INFINITY
-const negInfiniteNum = Number.NEGATIVE_INFINITY
-const notANum        = Number.NaN
+let go = Boolean(initial.trim());
+go = false;
+let goObj = new Boolean(initial.trim());
 
-let result = age.valueOf();
+console.log('permitive', go.toString());
+console.log('object', goObj.valueOf());
 
-console.log(Number(new Date));
+// All false values
+
+var bNoParam = new Boolean();
+var bZero = new Boolean(0);
+var bNull = new Boolean(null);
+var bEmptyString = new Boolean('');
+var bfalse = new Boolean(false);
