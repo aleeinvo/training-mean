@@ -15,6 +15,6 @@ let moreUsers = [
     'ubbaid'
 ];
 
-for(let [key, value] of users.entries()) {
-    console.log(`${key} => ${value}`);
-}
+console.log(users.every((el) => {
+    return (typeof el) == 'string';
+}));
