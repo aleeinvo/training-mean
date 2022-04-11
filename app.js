@@ -24,6 +24,6 @@ const inventory = [
     { name: 'fish', type: 'meat', quantity: 22 }
 ];
 
-users.reverse();
+console.log(users.shift());
 
 console.log(users);
