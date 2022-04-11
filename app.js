@@ -24,6 +24,6 @@ const inventory = [
     { name: 'fish', type: 'meat', quantity: 22 }
 ];
 
-users.unshift('first');
-
-console.log(users);
+for(let value of users.values()) {
+    console.log(value);
+}
