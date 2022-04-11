@@ -24,8 +24,6 @@ const inventory = [
     { name: 'fish', type: 'meat', quantity: 22 }
 ];
 
-let final = users.reduceRight((prev, current) => {
-    return prev + '+' + current;
-})
+users.reverse();
 
-console.log(final);
+console.log(users);
