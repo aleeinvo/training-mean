@@ -2,4 +2,4 @@
 
 let dev = 'aleedhillon';
 
-console.log(dev.charAt(0));
+console.log(dev.codePointAt(0));
