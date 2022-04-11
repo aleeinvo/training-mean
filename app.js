@@ -1,10 +1,5 @@
 // Arrays
 
-let person = {
-    name: 'alee',
-    city: 'lahore'
-};
-
 let users = [
     'alee',
     'arslan',
@@ -13,5 +8,4 @@ let users = [
     'asher'
 ];
 
-console.log(Array.isArray(users));
-console.log(Array.of(1, 2, 3, 4,5));
+console.log(users.at(3));
