@@ -15,6 +15,6 @@ let moreUsers = [
     'ubbaid'
 ];
 
-users.copyWithin(0, 3);
-
-console.log(users);
+for(let [key, value] of users.entries()) {
+    console.log(`${key} => ${value}`);
+}
