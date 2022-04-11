@@ -6,6 +6,7 @@ let users = [
     'usman',
     'numan',
     'asher',
+    'alee'
 ];
 
 let numbers = [
@@ -24,4 +25,6 @@ const inventory = [
     { name: 'fish', type: 'meat', quantity: 22 }
 ];
 
-console.log(users.join('<=>'));
+for(let key of users.keys()) {
+    console.log(key);
+}
