@@ -1,13 +1,30 @@
-const User = {
-    name: null,
-    email: null,
-    display: function() {
-        console.log(this.name);
-    }
+function Owner(name) {
+    this.name = name;
 }
 
-let alee = Object.create(User);
-alee.name = 'Alee Dhillon';
-alee.email = 'aleedhillon@gmail.com';
+function Car(name) {
+    this.name = name;
 
-console.log(alee);
+    Object.defineProperties(this ,{
+        owner: {
+            set: function(name) {
+                this._owner = new Owner(name);
+            },
+            get: function() {
+                return this._owner;
+            },
+        },
+    });
+}
+
+Car.prototype.toString = function() {
+    return JSON.stringify({
+        name: this.name,
+        owner: this.owner
+    });
+}
+
+let honda = new Car('Honda');
+honda.owner = 'Alee';
+
+console.log(honda + '');
