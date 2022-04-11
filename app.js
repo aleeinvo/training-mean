@@ -17,4 +17,14 @@ let users = [
     ]
 ];
 
-console.log(users.flat(2));
+let numbers = [
+    1,
+    2,
+    3,
+    4,
+    5
+];
+
+console.log(numbers.flatMap((el) => {
+    return [el, el * 2];
+}));
