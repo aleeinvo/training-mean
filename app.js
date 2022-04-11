@@ -1,8 +1,28 @@
 // Date
 
-let date = new Date(1993, 8, 13, 0, 0, 0, 0);
+function doSomething() {
+    return Array.from({ length: 100000 })
+        .fill(100)
+        .map(v => {
+            return v*v;
+        })
+        .reduce((prev, current) => {
+            return prev + current
+        });
+}
 
-const [month, day, year] = [date.getMonth(), date.getDate(), date.getFullYear()];
-const [hour, minutes, seconds] = [date.getHours(), date.getMinutes(), date.getSeconds()];
+const iterations = 10000;
+let result = [];
 
-console.log(year, month, day, hour, minutes, seconds);
+for(let i = 0; i<= iterations; i++) {
+    const start = performance.now();
+    doSomething();
+    const end = performance.now();
+
+    result.push(end - start);
+}
+
+let avg = result.reduce((prev, current) => {
+    return prev + current
+}) / iterations;
+console.log(`it took ${avg} miliseconds`);
