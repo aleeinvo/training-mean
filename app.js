@@ -5,9 +5,16 @@ let users = [
     'arslan',
     'usman',
     'numan',
-    'asher'
+    'asher',
+    [
+        'kirla',
+        'bhalo',
+        'someone',
+        [
+            'awais',
+            'joiya'
+        ]
+    ]
 ];
 
-console.log(users.findIndex((el) => {
-    return el.startsWith('a');
-}))
+console.log(users.flat(2));
