@@ -1,7 +1,13 @@
 // numbers
 
-let age = Number('26');
+let age = Number(28.24);
 
-let result = Number.parseInt('253.765');
+const biggestNum     = Number.MAX_VALUE
+const smallestNum    = Number.MIN_VALUE
+const infiniteNum    = Number.POSITIVE_INFINITY
+const negInfiniteNum = Number.NEGATIVE_INFINITY
+const notANum        = Number.NaN
 
-console.log(result);
+let result = age.valueOf();
+
+console.log(Number(new Date));
