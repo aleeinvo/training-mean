@@ -25,6 +25,8 @@ const inventory = [
     { name: 'fish', type: 'meat', quantity: 22 }
 ];
 
-console.log(users.pop());
+let final = users.reduce((prev, current) => {
+    return prev + '+' + current;
+})
 
-console.log(users);
+console.log(final);
