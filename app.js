@@ -15,6 +15,8 @@ let moreUsers = [
     'ubbaid'
 ];
 
-console.log(users.every((el) => {
-    return (typeof el) == 'string';
-}));
+let data = [1,2 ,3, 4, 5];
+
+data.fill(0, 1, 3);
+
+console.log(data);
