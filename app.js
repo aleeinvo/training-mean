@@ -25,6 +25,9 @@ const inventory = [
     { name: 'fish', type: 'meat', quantity: 22 }
 ];
 
-for(let key of users.keys()) {
-    console.log(key);
-}
+console.log(users.map(user => {
+    return {
+        name: user,
+        city: 'lahore'
+    };
+}));
