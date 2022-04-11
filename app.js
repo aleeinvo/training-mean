@@ -8,6 +8,6 @@ let users = [
     'asher'
 ];
 
-console.log(users.find((el) => {
+console.log(users.findIndex((el) => {
     return el.startsWith('a');
 }))
