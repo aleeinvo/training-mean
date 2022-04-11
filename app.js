@@ -24,6 +24,6 @@ const inventory = [
     { name: 'fish', type: 'meat', quantity: 22 }
 ];
 
-users.sort();
+users.splice(2, 1);
 
 console.log(users);
