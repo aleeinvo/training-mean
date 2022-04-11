@@ -24,6 +24,4 @@ const inventory = [
     { name: 'fish', type: 'meat', quantity: 22 }
 ];
 
-console.log(users.shift());
-
-console.log(users);
+console.log(users.slice(1, 3));
