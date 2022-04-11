@@ -1,18 +1,15 @@
-// Booleans
+// Strings
 
-let initial = ' ';
+String.prototype.last = function() {
+    return this.charAt(this.length - 1);
+}
 
-let go = Boolean(initial.trim());
-go = false;
-let goObj = new Boolean(initial.trim());
+String.prototype.first = function() {
+    return this.charAt(0);
+}
 
-console.log('permitive', go.toString());
-console.log('object', goObj.valueOf());
+let dev = new String('aleedhillon\0');
+let devPrim = 'aleedhillon';
 
-// All false values
-
-var bNoParam = new Boolean();
-var bZero = new Boolean(0);
-var bNull = new Boolean(null);
-var bEmptyString = new Boolean('');
-var bfalse = new Boolean(false);
+console.log(typeof dev);
+console.log(typeof devPrim);
