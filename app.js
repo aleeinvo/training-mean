@@ -15,4 +15,6 @@ let moreUsers = [
     'ubbaid'
 ];
 
-console.log(users.concat(moreUsers));
+users.copyWithin(0, 3);
+
+console.log(users);
