@@ -25,9 +25,6 @@ const inventory = [
     { name: 'fish', type: 'meat', quantity: 22 }
 ];
 
-console.log(users.map(user => {
-    return {
-        name: user,
-        city: 'lahore'
-    };
-}));
+console.log(users.pop());
+
+console.log(users);
