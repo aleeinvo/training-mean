@@ -6,15 +6,6 @@ let users = [
     'usman',
     'numan',
     'asher',
-    [
-        'kirla',
-        'bhalo',
-        'someone',
-        [
-            'awais',
-            'joiya'
-        ]
-    ]
 ];
 
 let numbers = [
@@ -25,6 +16,12 @@ let numbers = [
     5
 ];
 
-console.log(numbers.flatMap((el) => {
-    return [el, el * 2];
-}));
+const inventory = [
+    { name: 'asparagus', type: 'vegetables', quantity: 5 },
+    { name: 'bananas', type: 'fruit', quantity: 0 },
+    { name: 'goat', type: 'meat', quantity: 23 },
+    { name: 'cherries', type: 'fruit', quantity: 5 },
+    { name: 'fish', type: 'meat', quantity: 22 }
+];
+
+console.log(users.join('<=>'));
