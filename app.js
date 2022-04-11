@@ -4,18 +4,12 @@ data.name = 'Alee';
 data.city = 'Lahore';
 data.work = 'Dev';
 
-// Get the hidden props
+let obj = {
+    name: 'unlock'
+};
 
-function getAllProps(o) {
-    let discover = o;
-    let props = [];
+data[Math.random()] = 'Here is something';
 
-    while(discover !== null) {
-        props = props.concat(Object.getOwnPropertyNames(discover));
-        discover = Object.getPrototypeOf(discover);
-    }
-
-    return props;
+for(let prop in data) {
+    console.log(`${prop} => ${data[prop]}`);
 }
-
-console.log(getAllProps(data));
