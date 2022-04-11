@@ -1,15 +1,11 @@
-let data = new Object();
+function Car(name, model) {
+    this.name = name;
+    this.model = model;
 
-data.name = 'Alee';
-data.city = 'Lahore';
-data.work = 'Dev';
-
-let obj = {
-    name: 'unlock'
-};
-
-data[Math.random()] = 'Here is something';
-
-for(let prop in data) {
-    console.log(`${prop} => ${data[prop]}`);
+    this.run = (speed = 120) => {
+        console.log(this.name +' is runing at ' + speed + '...........');
+    }
 }
+
+let honda = new Car('Honda', 2008);
+honda.run(180);
