@@ -1,7 +1,17 @@
-// Strings
+// Arrays
 
-let dev = new String(' aleedhillon@gmail.com ');
+let person = {
+    name: 'alee',
+    city: 'lahore'
+};
 
-for(let char of dev) {
-    console.log(char);
-}
+let users = [
+    'alee',
+    'arslan',
+    'usman',
+    'numan',
+    'asher'
+];
+
+console.log(Array.isArray(users));
+console.log(Array.of(1, 2, 3, 4,5));
