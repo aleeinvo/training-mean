@@ -1,5 +1,7 @@
 // Strings
 
-let dev = 'aleedhillon@gmail.com';
+let dev = new String(' aleedhillon@gmail.com ');
 
-console.log(dev.substring(0, 5));
+for(let char of dev) {
+    console.log(char);
+}
