@@ -24,5 +24,6 @@ const inventory = [
     { name: 'fish', type: 'meat', quantity: 22 }
 ];
 
-console.log(users.toString());
-console.log(users.toLocaleString());
+users.unshift('first');
+
+console.log(users);
