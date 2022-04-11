@@ -6,7 +6,6 @@ let users = [
     'usman',
     'numan',
     'asher',
-    'alee'
 ];
 
 let numbers = [
@@ -25,7 +24,7 @@ const inventory = [
     { name: 'fish', type: 'meat', quantity: 22 }
 ];
 
-let final = users.reduce((prev, current) => {
+let final = users.reduceRight((prev, current) => {
     return prev + '+' + current;
 })
 
