@@ -1,9 +1,7 @@
 // numbers
 
-let age = Number('28');
+let age = Number('26');
 
-console.log(Number.EPSILON);
-console.log(Number.MAX_SAFE_INTEGER);
-console.log(Number.MIN_VALUE);
-console.log(Number.NaN);
-console.log(Number.NEGATIVE_INFINITY);
+let result = Number.parseInt('253.765');
+
+console.log(result);
