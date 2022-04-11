@@ -1,30 +1,9 @@
-function Owner(name) {
-    this.name = name;
-}
+// numbers
 
-function Car(name) {
-    this.name = name;
+let age = Number('28');
 
-    Object.defineProperties(this ,{
-        owner: {
-            set: function(name) {
-                this._owner = new Owner(name);
-            },
-            get: function() {
-                return this._owner;
-            },
-        },
-    });
-}
-
-Car.prototype.toString = function() {
-    return JSON.stringify({
-        name: this.name,
-        owner: this.owner
-    });
-}
-
-let honda = new Car('Honda');
-honda.owner = 'Alee';
-
-console.log(honda + '');
+console.log(Number.EPSILON);
+console.log(Number.MAX_SAFE_INTEGER);
+console.log(Number.MIN_VALUE);
+console.log(Number.NaN);
+console.log(Number.NEGATIVE_INFINITY);
