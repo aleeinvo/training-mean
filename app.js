@@ -1,10 +1,8 @@
 // Date
 
-let dob = new Date(1993, 8, 13, 0, 0, 0, 0);
+let date = new Date(1993, 8, 13, 0, 0, 0, 0);
 
-console.log(dob.toString());
-console.log(dob.toUTCString());
-console.log(dob.toISOString());
-console.log(dob.toGMTString());
-console.log(dob.toLocaleString());
-console.log(dob.valueOf());
+const [month, day, year] = [date.getMonth(), date.getDate(), date.getFullYear()];
+const [hour, minutes, seconds] = [date.getHours(), date.getMinutes(), date.getSeconds()];
+
+console.log(year, month, day, hour, minutes, seconds);
