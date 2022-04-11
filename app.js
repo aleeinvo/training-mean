@@ -1,18 +1,13 @@
-function Car(name, model) {
-    this.name = name;
-    this.model = model;
-
-    this.run = (speed = 120) => {
-        console.log(this.name +' is runing at ' + speed + ' by ' + this.owner);
+const User = {
+    name: null,
+    email: null,
+    display: function() {
+        console.log(this.name);
     }
 }
 
-function Owner(name, city) {
-    this.name = name;
-    this.city = city;
-}
+let alee = Object.create(User);
+alee.name = 'Alee Dhillon';
+alee.email = 'aleedhillon@gmail.com';
 
-let honda = new Car('Honda', 2008);
-honda.owner = new Owner('Alee', 'Lahore');
-console.log(honda);
-honda.run(180);
+console.log(alee);
