@@ -24,4 +24,6 @@ const inventory = [
     { name: 'fish', type: 'meat', quantity: 22 }
 ];
 
-console.log(users.some(el => el.startsWith('u')));
+users.sort();
+
+console.log(users);
