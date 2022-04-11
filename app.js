@@ -1,5 +1,5 @@
 // Strings
 
-let dev = 'aleedhillon';
+let dev = 'aleedhillon@gmail.com';
 
-console.log(dev.codePointAt(0));
+console.log(dev.split('@')[1].split('.')[0].toUpperCase());
