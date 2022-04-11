@@ -24,6 +24,6 @@ const inventory = [
     { name: 'fish', type: 'meat', quantity: 22 }
 ];
 
-for(let value of users.values()) {
-    console.log(value);
-}
+console.log(users.slice());
+
+console.log(users);
