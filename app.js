@@ -1,25 +1,10 @@
-const people = [
-    {
-        name: 'Mike Smith',
-        family: {
-            mother: 'Jane Smith',
-            father: 'Harry Smith',
-            sister: 'Samantha Smith'
-        },
-        age: 35
-    },
-    {
-        name: 'Tom Jones',
-        family: {
-            mother: 'Norah Jones',
-            father: 'Richard Jones',
-            brother: 'Howard Jones'
-        },
-        age: 25
-    }
-];
+// Math
 
-for(const {name: fullName, family: { sister: sisterName = null, ...restFamily}} of people) {
-    console.log(fullName, sisterName);
-    console.log(restFamily);
-}
+console.log('E',Math.E);
+console.log('LN2', Math.LN2);
+console.log('LN10', Math.LN10);
+console.log('LOG2E', Math.LOG2E);
+console.log('LOG10E', Math.LOG10E);
+console.log('PI', Math.PI);
+console.log('SQRT1_2', Math.SQRT1_2);
+console.log('SQRT2', Math.SQRT2);
