@@ -1,3 +1,3 @@
 // Math
 
-console.log(Math.sqrt(49));
+console.log(Math.trunc(2.2345333));
