@@ -1,3 +1,3 @@
 // Math
 
-console.log(Math.round(3.5));
+console.log(Math.sqrt(49));
