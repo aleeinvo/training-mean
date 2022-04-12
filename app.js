@@ -4,17 +4,17 @@ function doSomething() {
     return Array.from({ length: 100000 })
         .fill(100)
         .map(v => {
-            return v*v;
+            return v * v;
         })
         .reduce((prev, current) => {
             return prev + current
         });
 }
 
-const iterations = 10000;
+const iterations = 1000;
 let result = [];
 
-for(let i = 0; i<= iterations; i++) {
+for (let i = 1; i <= iterations; i++) {
     const start = performance.now();
     doSomething();
     const end = performance.now();
@@ -25,4 +25,4 @@ for(let i = 0; i<= iterations; i++) {
 let avg = result.reduce((prev, current) => {
     return prev + current
 }) / iterations;
-console.log(`it took ${avg} miliseconds`);
+console.log(`it took avg ${avg} miliseconds`);
