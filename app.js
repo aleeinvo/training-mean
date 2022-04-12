@@ -1,41 +1,53 @@
 // Math
 
-console.log(Math.clz32(1));
+// console.log(Math.pow(2, 11));
 
-console.log(Math.exp(99));
+function randomNumber(min = 0, max = 1000)
+{
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min);
+}
 
-console.log(Math.expm1(99));
+function removeIfFound(range, n) {
+    let index = range.findIndex(x => {
+        return x === n;
+    });
 
-console.log(Math.floor(4.989));
+    if(index >= 0) {
+        range.splice(index, 1);
+    }
 
-console.log(Math.fround(4.889));
+    return range;
+}
 
-console.log(Math.fround(1.2));
+let min = 0;
+let max = 100;
 
-console.log(Math.hypot(40, 2));
+let range = [];
+for(let i = min; i < max; i++) {
+    range.push(i);
+}
 
-console.log(Math.imul(3, 4));
+let start = performance.now();
 
-let numbers = [
-    34,
-    45,
-    98765,
-    23,
-    565,
-    3456,
-    7887
-];
+let randCheck = setInterval(() => {
+    console.clear();
+    let rand = randomNumber(min, max);
+    console.log('Random:', rand);
 
-console.log(Math.max(...numbers));
+    range = removeIfFound(range, rand);
 
-// or 
+    let time = performance.now() - start;
 
-let max = numbers.reduce((prev, current) => {
-    return Math.max(prev, current);
-}, -Infinity);
+    console.log(`Time: ${time}`);
+    console.log('Range Count:', range.length);
+    console.log('Range:', range);
 
-let min = numbers.reduce((prev, current) => {
-    return Math.min(prev, current);
-}, Infinity);
+    if(!range.length) {
+        clearInterval(randCheck);
+        console.log('Done, all numbers have been generated.');
 
-console.log(max);
+        console.log(`it took ${time} miliseconds`);
+    }
+}, 100);
