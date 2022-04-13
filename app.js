@@ -1,25 +1,19 @@
-const people = [
-    {
-        name: 'Mike Smith',
-        family: {
-            mother: 'Jane Smith',
-            father: 'Harry Smith',
-            sister: 'Samantha Smith'
-        },
-        age: 35
-    },
-    {
-        name: 'Tom Jones',
-        family: {
-            mother: 'Norah Jones',
-            father: 'Richard Jones',
-            brother: 'Howard Jones'
-        },
-        age: 25
+class CustomError extends Error {
+    constructor(message){
+        super(message);
+        this.name = 'CustomError';
     }
-];
+}
 
-for(const {name: fullName, family: { sister: sisterName = null, ...restFamily}} of people) {
-    console.log(fullName, sisterName);
-    console.log(restFamily);
+class MoreCustomError extends CustomError {
+    constructor(type) {
+        super('Custom error has occured');
+        this.name = 'CustomError' + type;
+    }
+}
+
+try {
+    throw new MoreCustomError('more');
+} catch (error) {
+    console.log(error);
 }
