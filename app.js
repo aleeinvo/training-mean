@@ -1,19 +1,11 @@
-class CustomError extends Error {
-    constructor(message){
-        super(message);
-        this.name = 'CustomError';
-    }
-}
+let nameField = document.getElementById('name');
 
-class MoreCustomError extends CustomError {
-    constructor(type) {
-        super('Custom error has occured');
-        this.name = 'CustomError' + type;
+nameField.addEventListener('input', (e) => {
+    const f = e.target;
+    if(f.validity.tooShort) {
+        f.setCustomValidity('come one, at least 8 characters');
+        f.reportValidity();
+    } else {
+        f.setCustomValidity('');
     }
-}
-
-try {
-    throw new MoreCustomError('more');
-} catch (error) {
-    console.log(error);
-}
+})
