@@ -1,16 +1,26 @@
-let train = document.getElementById('train');
+class User {
+    constructor(name) {
+        this.name = name;
+    }
 
-train.addEventListener('click', function(e) {
-    let start = Date.now();
+    whoIs() {
+        console.log(this.name + ' is here.');
+    }
+}
 
-    let animation = setInterval(() => {
-        let timePassed = Date.now() - start;
+class Admin extends User {
 
-        if(timePassed > 6000) {
-            clearInterval(animation);
-            return;
-        }
+    whoIs() {
+        console.log('admin');
+        super.whoIs();
+    }
+    accessAll() {
+        console.log('can access whole system');
+    }
+}
 
-        train.style.left = timePassed / 5 + 'px';
-    })
-});
+let myAdmin = new Admin('Alee');
+
+console.log(myAdmin);
+
+myAdmin.whoIs();
